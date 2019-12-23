@@ -1,2 +1,0 @@
-# PublicSite
-Created with CodeSandbox
