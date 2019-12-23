@@ -2,6 +2,8 @@ import React from "react"
 import Banner from './BannerComponent'
 import ImageComponent from './ImageComponent'
 import '../css/Header.css'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Loader from 'react-loader-spinner'
 import {PaginationComponent} from './PaginationComponent'
 
 import Header from './Header'
@@ -87,7 +89,15 @@ class Home extends React.Component {
         </div>
         </div>
          : 
-         <div>Loading...!!!!</div>
+         <div className='LoaderPosition'>Loading...!!!!
+         <Loader
+         type="Puff"
+         color="#00BFFF"
+         height={100}
+         width={100}
+         timeout={300000} //3 secs
+       />
+       </div>
          }
            
            </div>

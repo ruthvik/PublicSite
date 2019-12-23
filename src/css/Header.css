@@ -15,6 +15,11 @@ body {
     box-sizing: border-box;
 }
 
+.LoaderPosition {
+  margin: auto;
+  width: 30%;
+}
+
        
 #render-page-numbers {
   overflow-x: scroll;
