@@ -8,20 +8,17 @@ class Banner extends React.Component {
           src="https://svgsilh.com/svg/971341.svg"
           width="400"
           height="200"
-          alt="Banner Image"
+          alt="Banner "
         />
         <div className="parentContent">
-          <div className="textContent">CALL: (+91)-7416-1662-62 </div>
+          <div className="textContent">CALL: (+91)-888582-8460 </div>
           <div>
             <span className="dot">g+</span>
             <span className="dot">f</span>
             <span className="dot">L</span>
             <span className="dot">I</span>
           </div>
-          <div className="textContent">
-            {" "}
-            370 Telok Blangah Road (Level 2), Singapore 098835
-          </div>
+          <div className="textContent"> Priya Delux Road, Kamareddy 503111</div>
         </div>
       </div>
     );
