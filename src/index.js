@@ -7,26 +7,29 @@ import * as serviceWorker from "./serviceWorker";
 import Home from "./components/Home";
 import About from "./components/About";
 import HomeItem from "./components/HomeItem";
-import { UserContext } from "./components/UserContext";
 import Details from "./components/Details";
-import Schedule from "./components/Schedule";
-
+import { UserContext } from "./components/UserContext";
 import Blog from "./components/Blog";
+import Schedule from "./components/Schedule";
+import Header from "./components/Header";
 
 const routing = (
   <Router>
     <div>
-      <Route path="/" component={App} />
-      <Route path="/Home" exact component={Home} />
-      <Route path="/Home/:id" component={HomeItem} />
-      <UserContext.Provider value="Hello from context">
-        <Route path="/About" component={About} />
-        <Route path="/Details" component={Details} />
-      </UserContext.Provider>
-      <Route path="/Schedule" exact component={Schedule} />
-      <Route path="/Blog" exact component={Blog} />
-      <Route path="/Blog/:id" component={HomeItem} />
+      <Header />
+      <div>
+        <Route path="/" component={App} />
+        <Route path="/Home" exact component={Home} />
+        <Route path="/Home/:id" component={HomeItem} />
+        <UserContext.Provider value="Hello from context">
+          <Route path="/About" component={About} />
+          <Route path="/Details" component={Details} />
+        </UserContext.Provider>
+        <Route path="/Blog" exact component={Blog} />
+        <Route path="/Schedule" exact component={Schedule} />
+        <Route path="/Blog/:id" component={HomeItem} />
     </div>
+  </div>
   </Router>
 );
 
