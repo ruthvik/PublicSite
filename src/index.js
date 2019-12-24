@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -28,8 +28,8 @@ const routing = (
         <Route path="/Blog" exact component={Blog} />
         <Route path="/Schedule" exact component={Schedule} />
         <Route path="/Blog/:id" component={HomeItem} />
-      </div>
     </div>
+  </div>
   </Router>
 );
 
