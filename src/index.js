@@ -18,7 +18,7 @@ const routing = (
     <div>
       <Header />
       <div>
-        <Route path="/" component={Home} />
+        <Route path="/" component={App} />
         <Route path="/Home" exact component={Home} />
         <Route path="/Home/:id" component={HomeItem} />
         <UserContext.Provider value="Hello from context">
