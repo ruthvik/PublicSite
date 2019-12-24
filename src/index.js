@@ -18,16 +18,16 @@ const routing = (
     <div>
       <Header />
       <div>
-      <Route path="/" component={App} />
-      <Route path="/Home" exact component={Home} />
-      <Route path="/Home/:id" component={HomeItem} />
-      <UserContext.Provider value="Hello from context">
-        <Route path="/About" component={About} />
-        <Route path="/Details" component={Details} />
-      </UserContext.Provider>
-      <Route path="/Schedule" exact component={Schedule} />
-      <Route path="/Blog" exact component={Blog} />
-      <Route path="/Blog/:id" component={HomeItem} />
+        <Route path="/" component={App} />
+        <Route path="/Home" exact component={Home} />
+        <Route path="/Home/:id" component={HomeItem} />
+        <UserContext.Provider value="Hello from context">
+          <Route path="/About" component={About} />
+          <Route path="/Details" component={Details} />
+        </UserContext.Provider>
+        <Route path="/Blog" exact component={Blog} />
+        <Route path="/Schedule" exact component={Schedule} />
+        <Route path="/Blog/:id" component={HomeItem} />
     </div>
   </div>
   </Router>
